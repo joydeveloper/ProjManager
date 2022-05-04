@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace DataModels
 {
@@ -7,14 +8,24 @@ namespace DataModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string? Description { get; set; }
+        public override string ToString()
+        {
+            return $"{Id}/{Name} {Description}";
+        }
     }
+    [Index("Email", IsUnique = true, Name = "Email_Index")]
     public class Employee
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Sname { get; set; }
         public string? Fname { get; set; }
-        public string? email { get; set; }
+        public string? Email { get; set; }
+        public override string ToString()
+        {
+            return $"{Id}/{Name} {Sname} {Fname} {Email}";
+        }
+
     }
 
     public class Project
