@@ -10,6 +10,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjManager", "ProjManager.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataOperations", "..\DataOperations\DataOperations.csproj", "{A70848CF-3229-4265-A9B1-FAE8926299C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRManCore", "..\PRManCore\PRManCore.csproj", "{961FA9F9-7BA5-4E23-B64A-7C4F6C2301AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A70848CF-3229-4265-A9B1-FAE8926299C4} = {A70848CF-3229-4265-A9B1-FAE8926299C4}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{A70848CF-3229-4265-A9B1-FAE8926299C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70848CF-3229-4265-A9B1-FAE8926299C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70848CF-3229-4265-A9B1-FAE8926299C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961FA9F9-7BA5-4E23-B64A-7C4F6C2301AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961FA9F9-7BA5-4E23-B64A-7C4F6C2301AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961FA9F9-7BA5-4E23-B64A-7C4F6C2301AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961FA9F9-7BA5-4E23-B64A-7C4F6C2301AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
